@@ -1,0 +1,1 @@
+Localization techniques are used to either replace or support the traditional GNSS signals, while spoofing detection schemes are usually designed to work in conjunction with the GNSS, taking an active part (raising alarms and indicating corrections) only when they detect inconsistencies between the position reported by the GNSS and the one obtained via local computations

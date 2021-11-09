@@ -42,7 +42,7 @@
 - Pseudorandom number generators
     - secret frequency hopping
 
-## Are We Still Innsecure?
+## Are We Still Insecure?
 - Unfortunately, yes!
 - Attackers are evolving too!
     - access to open source crypto
@@ -128,10 +128,10 @@
 
 ## Symbol (Baud) Rate
 - m distinct symbols can represent log2(m) bits
-    - for example to represent 4 bits we need 2^4 = 16 symbolls
+    - for example to represent 4 bits we need 2^4 = 16 symbols
     - m is modulation order
 - symbol rate of n:n possible changes per second
-    - m and n determine the trasnmission (bit) rate
+    - m and n determine the transmission (bit) rate
     - ex. assume symbol rate is 100 symbols/second and modulation order is 32 what is the bit rate?
         - 100 * log2(32) = 500 bits
 
@@ -145,7 +145,7 @@
 ## OFDM
 - Orthogonal Frequency Division Multiplexing
     - widely used in nearly all modern systems
-    - careflly selects frequency components of a signal
+    - carefully selects frequency components of a signal
         - ex. use only the frequencies that are multiple of f1
         - subcarriers = frequency components
         - orthogonal subcarriers
@@ -155,7 +155,7 @@
     - measured in dB
 - Interference: Energy coming from other transmissions
     - SINR: Signal-to-interference-plus-noise ratio
-    - Interntional vs. Inintentional
+    - Interntional vs. Unintentional
 
 ## dBm
 - dBm is the dB value when referenced to P0 = 1mw
@@ -205,11 +205,11 @@
 
 ## Free-Space Path Loss
 - Attenuation of EM energy from the Tx to the Rx over the obstacle-free space (LOS channel)
-- The wider the propagation area, the less power will be recieved by a single antenna
+- The wider the propagation area, the less power will be received by a single antenna
 - Free-space path loss (sphere wavefront case)
 
 ## Signal Superposition - Concept
-- WHen two signals arrive (almost) at the same time, they superpose on each other
+- When two signals arrive (almost) at the same time, they superpose on each other
 	- We say the two signals interfere -- or collide
 	- The superposed (combined) signal may look very different than the individual ones
 - Its kind of like sound waves, they can combine to be stronger if they line up correctly but for the most part they collide and destroy each other
@@ -217,7 +217,7 @@
 
 ## Multipath Propagation and Fading 
 - In case of signal reflections
-	- contructive vs. descructive interference (fading)
+	- constructive vs. destructive interference (fading)
 	- depends on how far the reflection object is (a+b) and lamda/2
 		- in phase vs. out of phase
 		![[Pasted image 20210902113332.png]]
@@ -249,7 +249,7 @@
 	- y = hx + n
 - MIMO channel model
 	- Y = HX + N
-	- p transmit antennas and q recieve antennas
+	- p transmit antennas and q receive antennas
 - Example MIMO System:
 	- ![[Pasted image 20210902115600.png]]
 
@@ -263,15 +263,15 @@
 ## Possible PHY-Layer Attacks
 - Eavesdropping on open medium - sniffing
 - RF jamming (reduce transmission rate)
-- Unintentional EM emanatin
+- Unintentional EM emanating
 	- TEMPEST
 - Privacy violation
-	- multipath channel coeffiecients - location characterization
+	- multipath channel coefficients - location characterization
 - Modulation classification
 
 
 ## Mechanisms/Applications
-- Spread spectrum (frequenct hopping)
+- Spread spectrum (frequency hopping)
 - Authentication
 	- Device fingerprints, channel characteristics, watermarking
 - Traffic/Transmission attribute obfuscation
@@ -312,14 +312,13 @@
 - Address the following key issues
 	- Coordination of devices within a WLAN and their mobility
 	- Privacy and security of the user and its data
-- 
 ## Infra Basic Service Set
 - BSS with an Access Point (AP)
 	- AP connects wireless and wired networks
 	- Basic Service Set Identifier (BSSID)
-		- BBSSID = AP's MAC Address
+		- BSSID = AP's MAC Address
 - Extended Service Set (ESS)
-	- Service Set IDentifier (SSID/ESSID)
+	- Service Set Identifier (SSID/ESSID)
 - Distribution System
 	- connects multiple APs, increasing coverage
 
@@ -336,7 +335,7 @@
 - Distributed Coordination Function (DCF)
 	- For asynchronous data service (best effort service)
 	- Nodes (including AP) contend for access to medium
-- Point Coordinationn Function (PCF) (optional)
+- Point Coordination Function (PCF) (optional)
 	- For time-bounded service
 	- Polling from AP
 - Hybrid Coordination Function (HCF)
@@ -346,7 +345,7 @@
 - Carrier Sense Multiple Access (CSMA) with Collision Avoidance
 - Collision avoidance methods
 	- Physical carrier sense
-		- Checks if RSS (Recieved Signal Strength) is above a threshold
+		- Checks if RSS (Received Signal Strength) is above a threshold
 	- Virtual carrier sense
 		- Wait for the duration another Tx "announced" it will be active 
 	- RTS (Request To Send) / CTS (Clear To Send) mode
@@ -357,9 +356,9 @@
 
 ## CSMA/CA Data and ACK
 - Sender (physical carrier sense)
-	- If channel idle for DIFS*: transmit entire data fram
+	- If channel idle for DIFS*: transmit entire data e
 		- If later on collision detected: increase backoff time next time
-	- If chnnel bust: backoff
+	- If channel bust: backoff
 - Receiver
 	- If received OK, return ACK after SIFS
 
@@ -368,7 +367,7 @@
 
 ## Wi-Fi Frequency Bands
 - Supported channel bandwidths
-	- 10 (.11p), 20, 40, 80 and 160 MHz
+	- 10 (.11a), 20, 40, 80 and 160 MHz
 - Radio frequency range (spectrum):
 	- As per FCC "New Rules" (2015)
 ![[Pasted image 20210907115639.png]]
@@ -411,7 +410,7 @@
 ## 802.11ax (2021) - Wi-Fi 6
 - Technical name: High Efficiency WLAN (HEW)
 	- GHz band, whatever allowed to use
-		- Wi-Fi 6E: Wi-Fi 6 Etended to the 6GHz band
+		- Wi-Fi 6E: Wi-Fi 6 Extended to the 6GHz band
 	- Wake time scheduling (for power savings)
 	- Multi-user MIMO in both downlinks and uplink
 - OFDMA (Orthogonal FD Multiple Access)
@@ -442,14 +441,14 @@
 ![[Pasted image 20210909110409.png]]
 
 ### Joining WLAN - Initiation
-- 1. Probing (scanning) to find an AP
+1. Probing (scanning) to find an AP
 	- Active scanning
 		- Prob request/response frames
 	- Passive Scanning
 		- Listen for beacon frames
-- 2. Auth - default mode in WPA2: open
+2. Auth - default mode in WPA2: open
 	- Auth request/response frames
-- 3. Association: AP and stations swap info
+3. Association: AP and stations swap info
 	- Association request/response frames
 	- Transmit rates, cipher suite, MAC addresses, etc.
 
@@ -470,18 +469,18 @@
 	- A variety of auth methods
 	- EAPOL: Encapsulation of EAP over LAN
 - RADIUS: Remote Access Dial-In User Service
-	- Set of common functiionalities across auth servers
+	- Set of common functionalities across auth servers
 	- a protocol that allows access those functionalities/services
 - WPA2 with 802.1X is called WPA2-enterprise
 	- Appropriate for medium and large enterprises, and more recently, public Wi-Fi networks
 	
 	### Pairwise Key Hierarchy
-- 1. Maser Session Key (MSK)
-	- Generated after mutual authentication fo the supplicant and auth server (AS)
-- 2. Pairwise Master Key (PMK)
+1. Maser Session Key (MSK)
+	- Generated after mutual authentication for the supplicant and auth server (AS)
+2. Pairwise Master Key (PMK)
 	- In 802.1X mode: derived from MSK, and is client-specific
 	- In pre-shared key mode: PMK = PSK (based on passphrase)
-- 3. Pairwise Transient Key (PTK) - Derived from PMK
+3. Pairwise Transient Key (PTK) - Derived from PMK
 	- Generated after supplicant and AP's mutual auth
 
 ### First Step 802.11 Association
@@ -494,17 +493,17 @@
 ![[Pasted image 20210909111743.png]]
 
 ### Results of 4-way Handshake
-- 1. Supplicant and authenticator both proved the knowledge of the shared PMK
+1. Supplicant and authenticator both proved the knowledge of the shared PMK
 	- Mutual auth
-	- acommon step in both enterprise and personal
-- 2. A fresh ptk is derived
-- 3. both parties have synced and turned on encryption of unicast (and group) packets
+	- A common step in both enterprise and personal
+2. A fresh PTK is derived
+3. both parties have synced and turned on encryption of unicast (and group) packets
 
 ## AES-CCMP
 - provides a very high level of confidentiality, integrity and replay protection of 802.11
 - Relies on AES
 	- 128 bit key
-- CCMP: Counter mode with ciipher-block chaining MAC protocol
+- CCMP: Counter mode with cipher-block chaining MAC protocol
 	- 1. AES counter mode block cipher for encryption
 	- 2. AEES cipher-block-chaining MAC (CBC-MAC) for integrity
 
@@ -513,9 +512,9 @@
 	- reveals the patterns in the original data - not used in WPA2
 	![[Pasted image 20210914111238.png]]
 	
-	## Block Cipher Modes (2)
-	- Electronic Codebook (ECB) - parallel mode
-		- Reveals the patterns in the original data - not used in WPA2
+## Block Cipher Modes (2)
+- Electronic Codebook (ECB) - parallel mode
+	- Reveals the patterns in the original data - not used in WPA2
 ![[Pasted image 20210914111354.png]]
 
 ## Block Cipher Modes (3)
@@ -537,20 +536,20 @@
 ## Computing MIC
 - Used CBC-MAC with 128-bit blocks
 - The first block for computing MIC is comprised of
-	- 1. Flag, which is a constatn
-	- 2. The same 104-bit nonce used in counter mode encryption
+	1. Flag, which is a constant
+	2. The same 104-bit nonce used in counter mode encryption
 	- Dlen, which is the length of data
 - Second block: Additional Authentication Data
 	- MAC Addresses, the fragment number, and QOS identifier
 - Then data blocks
 
 ## CCM Protocol (CCMP)
-- CCM: COunter with CBC-MAC combination
+- CCM: Counter with CBC-MAC combination
 - Three features
 	- Specification of a nonce for each packet
-		- Seccessive packets encrypted separately
+		- Successive packets encrypted separately
 		- Detects replay attacks
-	- Achieve both message integrity and encryption with single ptk
+	- Achieve both message integrity and encryption with single PTK
 	- Extension of integrity to cover data not encrypted (e.g., MAC addresses)
 
 ## CCMP MPDU
@@ -560,11 +559,11 @@
 
 # Week 4 Class 2
 ## Pairwise Key Hierarchy - Review
-- 1. Master Session Key (MSK) - Generated after 802.1X auth
-- 2. Pairwise Master Key (PMK) 
+1. Master Session Key (MSK) - Generated after 802.1X auth
+2. Pairwise Master Key (PMK) 
 	- In 802.1X mode: derived from MSK
 	- In pre-shared key mode:
-- 3. Pairwise Transient Key (PTK) - Collection of operational keys
+3. Pairwise Transient Key (PTK) - Collection of operational keys
 	- Key Confirmation Key (KCK) - used for integrity-checks for key distribution and to prove possession of PMK
 	- Key Encryption Key (KEK) - used to encrypt and distribute keys, e.g., Group Transient Key (GTK)
 	- Temporal Key (TK) - used to encrypt data traffic
@@ -574,14 +573,14 @@
 - Simple passphrases -> dictionary attacks
 	- PSK = PBKDF2(HMAC-SHA1, passphrase,ssid,4096,256)
 		- PBKDF2: A password-based key derivation function
-	- Capture one MIC, try different pssphrases offline
+	- Capture one MIC, try different passphrases offline
 		- Deriving PTK needs SNonce and ANonce too (sent in plaintext)
 		- Even easier for other clients of the same network
 	- coWPAtty: A tool for cracking/auditing pre-shared key (PSK)
 - Fixed in WPA3
 
 ## IEEE 802.11w (2009)
-- Protect management frames
+- Protected management frames
 	- Confidentiality, integrity, authenticity, and replay (via CCMP)
 - Frames protected by 802.11w
 	- Disassociation and deauthentication
@@ -685,7 +684,7 @@
 - Random numbers and password element are masked->Attacker cannot obtain them to check if a guessed passphrase (from dictionary) is correct
 	- In contrast, the inputs to PBKDF2 function were known
 	- ANonce and SNonce were also easy to capture
-- Attcker would need a network interaction to confirm each guessed password
+- Attacker would need a network interaction to confirm each guessed password
 	- Idea: slow down the rate of an attempted attack
 	- Temporal limit on password checks
 
@@ -700,4 +699,398 @@
 ## WPA3 for Open Networks
 - Unauthenticated encryption
 - Based on Opportunistic Wireless Encryption (OWE)
-![[Pasted image 20210923152210.png]]
+![[Pasted image 20211018154319.png]]
+
+# Lecture based Quiz 2
+- Review the slides
+- Take the baseline understanding
+
+# Week 7 Class 2
+## Staelliate Communications  (SATCOM)
+- Three main types
+	- Relay commuications between ground stations
+		- Beyond LOS communications 
+		- Signal is amplified via a transponder
+	- Sense precipitation, temp, emissions, etc
+	- Track and control objects on the ground
+- Applications
+	- TVs, phone, positioning, radio, internet, military
+	- Over 2,000 satellites are orbiting
+## Communication Satellites
+- Types of geocentric satellites
+	- Low Earth Orbit (LEO) - below 2,000 km
+	- Medium Earth Orbit (MEO) - below 35,000 km
+	- Geostationary Orbit (GEO) - move at same speed as earth
+	- High Earth Orbit
+
+## GPS Global Positioning System
+- Sat-based radio navigation system owned by US gov, operated by the US air force
+	- Global navigation sat system (GNSS) provides geolocation and time info to a GPS receiver
+	- Requires an unobstructed LOS to four or more GPS satellites
+- There are 31 satellites
+
+## SATCOM Security Challenges
+- End-to-end encryption - costly (multibillion dollar investment)
+- Denial of service attacks (jamming)
+- Autonomous attack detection and incident response
+- Secure networking for a large number of satellites in multiple orbits with multiple communications links
+- In particular, how about GPS?
+	- Authentication? no
+	- Confidentiality? no
+	- Availability? no
+
+## Secure SATCOM - Spread Spectrum
+- First line of defense against jamming and eavesdropping
+	- Also, mitigates interference
+1. Direct sequence spread spectrum
+	- Example: GPS
+2. Frequency hopping spread spectrum
+	- More robust to interference/attacks
+		- Dynamic FH sequence -> hard to learn by adversaries
+	- Examples: Military Strategic and Tactical Relay (MILSTAR)
+
+# Lit Review
+## Expectations
+- get 4 main things
+	- baseline understanding of wireless security
+	- presentation skills
+	- get a good sense of things coming up in wireless security (emerging topics)
+	- practice steps of the research process (think independently)
+- Read 5-7 good papers
+- 2 pages including introduction
+- you are then expected to know exactly what the next steps are to complete the project
+- Make a case that what you come up with is different than what others have done
+- Threat model: What are the capabilities and goals of the attacker
+
+# Cellular Networks Security
+- Base station (eNodeB) in a Radio Access Network (RAN)
+
+## Subscriber Identity Module (SIM)
+- Secure storage for 
+	- Administrating data
+		- PIN
+	- International Mobile Subscriber Identity - IMSI
+	- Temporary Mobile Subscriber Identity - TMSI (or GUTI)
+	- Authentication and Ciphering Keys
+	- Roaming data, SMS, telephone numbers, etc
+		- Mobile Station International Subscriber Directory Number - MSISDN
+	- SIM card is also a computing device
+		- Implementation of encryption
+
+## Mobile Equipment Identification
+- International Mobile Equipment Identifier (IMEI)
+	- Allows unique identifying phones, independent of SIM
+- Equipment Identity Register (EIR)
+	- White list - valid mobiles
+	- Black List - stolen
+	- Gray List - local tracking mobiles
+- Central Equipment Identity  Register (CEIR)
+	- Approved mobile type 
+	- Consolidated black list
+
+## IMSI
+- To uniquely identify a subscriber/SIM
+	- It is different than telephone number (MSISDN) and IMEI
+	- TMSI, assigned by the network, is used to hide the IMSI
+- 15 digits (or less)
+	- 3 digit mobile code - MCC
+	- 3 digit mobile network code (MNC) - in the US
+	- 9-10 digit mobile subscriber identification number - MSIN
+
+## Key Management Scheme
+- K - Subscriber Authentication Key
+	- Shared 128-bit key
+	- Used for subscriber (SIM holder) authentication and session key generation
+- Stored in 2 locations
+	1. Subscribers SIM (owned by operator, trusted)
+	2. Home Locator Register (HLR) of the subscribers carrier
+- SIM can be used with different equipment
+	- Key management is independent
+
+## Cellular Networks - Generations
+- 1G - 1980's
+	- Analog radio signals
+	- FDMA (frequency-division multiple access)
+	- Voice-only
+- 2G (GSM) - 1990s
+	- Global System for Mobile Comms
+	- Digital radio signals, using digital modulation
+	- TDMA (time-division multiple access)
+	- Data services (SMS and MMS)
+	- Digital encryption, one-way auth
+
+## A5 - A Stream Cipher
+- Implemented very efficiently on SIM for 2G
+	- Design was never made public
+	- Disclosed by Ross Anderson and Bruce Schneier
+- Variants
+	- A5/1 - the strong version
+	- A5/2 - the weak version (for certain export regions)
+	- A5/3
+		- GSM Association Security Group and 3GPP design
+		- Based on KASUMI Algorithm
+
+## Encryption in GSM (2G)
+- Stream cipher using A5/1 Algorithm
+	- Security through obscurity? A5 was initially kept secret, but became public through reverse engineering
+	- Within 2 minutes of intercepted call, the attack takes only 1 second
+
+## IMSI Catchers
+- Eavesdroppers who intercept users' IMSI to track their location and other things
+	- Attacker is afake (portable) BTS, a form of MitM attack
+		- the fake base station send an identity_request to the victim mobile phone, forcing it to respond with its IMSI
+	- Easy to launch GSM (why?)
+		- phones dont auth network, they automatically trust the network
+- StingRay:Harris Corp IMSI Catcher for phone surveillance
+	- Intercept GSM communications
+	- Stingray II: Crossbow (U.S. ICE)
+
+## Paging
+- An incoming call or SMS for the subscriber
+![[Pasted image 20211019114006.png]]
+
+## Paging and Identity Harvesting
+- Paging
+	- When the network/BTS needs to notify the mobile phone of an incoming call/SMS
+	- The paging request message contains IMSI/TMSI in cleartext
+- Identity harvesting attack
+	- Dial and disconnect immediately, forcing the BTS to keep sending paging request messages
+
+## Next Generations - 2.5G
+- 2G retirement
+	- AT&T (2017) and Verizon (2020) already shut down 2G
+	- T-Mobile is expected to shutdown 2G by December 2022
+		- T-Mobile already blocks new 2G or 3G activations (Jan. 2021)
+- 2.5G (GPRS) - early 2000s
+	- Packet switching (billing based on data volume)
+		- GSM was circuit-switched telephony
+		- best-effort service
+	- GEA3 (based on KASUMI) for keystream generation
+
+## 3GPP
+- 3rd Generation Partnership Project
+	- Standards organization of mobile broadband protocols
+	- Formed in 1998 for developing 3G
+- Three Technical Specification groups
+	1. Radio Access Network (RAN)
+	2. Services & Systems Aspects (SA)
+	3. Core Network & Terminals (CT)
+- Releases
+![[Pasted image 20211019114643.png]]
+
+## 3rd Generation (3G)
+- 3G - early 2000s
+	- Higher data rate (up to 14 mbps)
+	- code division multiple access (CDMA)
+		- Based on DSSS, each user is assigned a dedicated code
+- Competing Techs
+	- UMTS (Universial Mobile Telecommunications Service)
+		- Europe, Japan, China
+	- CDMA2000: Adopted by Verizon Wireless in 2002, will shut down by the end of 2020 (ATT: 2022)
+
+## UMTS Architecture
+- very similar to GSM
+	- Mobile station-> User equipment (UE)
+	- SIM -> Universal SIM (USIM)
+	- BTS -> Node B
+![[Pasted image 20211019115018.png]]
+
+## 3G Mutual Auth
+- New! Allow the UE to authentication the network,mitigating impersonation attacks
+- Authentication and Key Agreement (AKA) protocol
+	- The basis for security in 3G, 4G, 5G
+	- Challenge-response for UE authentication (like GSM)
+	- SQN: sequence number to prevent replay attacks
+	- Establish keys to protect subsequent communications
+		- using f1--f5: A set of one-way keyed cryptographic functions
+		- That includes f4 for integrity key generation
+
+## AKA Main Features
+- A unique permanent pre-shared symmetric key K
+- The network generates a challenge R
+	- It authenticates the UE through verifying UE's response RES
+- The network also generates a MAC (Message authentication code) for SQN and R
+	- UE authenticates the network via verifying its MAC
+- SQN is not transmitted in plaintext
+	- To prevent eavesdropping and correlating attacks
+
+## AKA - 1st Phase
+![[Pasted image 20211019115709.png]]
+HLR - Home Location register
+xRES - expected Response from UE
+CK - Confidentiality Key
+IK - Integrity Key
+
+## AKA - 2nd Phase
+![[Pasted image 20211019120426.png]]
+
+## 4th Generation (4G)
+- 4G - 2011
+	- All IP-based communications (IP telephony)
+		- Voice over LTE (VoLTE) - HD voice call
+	- Increases speed (up to 1 Gbit/s)
+	- OFDMA multi-carrier (instead of CDMA)
+	- MIMO capability
+- Two techs
+	1. LTE Advanced (long term evolution advanced)
+	2. Mobile WiMAX (IEEE 802.16e) - not very popular in the US
+		- last mile wireless broadband access instead of cable and DSL
+
+## OFDMA vs OFDM - A Review
+- Orthogonal Frequency Division Multiple Access
+![[Pasted image 20211019121313.png]]
+
+## LTE Network Architecture
+- Node B -> Evolved Node B (eNodeB) - more responsibilities
+- HLR -> Home Subscriber Server (HSS)
+![[Pasted image 20211019121450.png]]
+
+## Attach Procedure in LTE
+![[Pasted image 20211021112349.png]]
+![[Pasted image 20211021112414.png]]
+![[Pasted image 20211021112439.png]]
+
+## How NSA Tracks People
+- A mobile device continuously announces its location
+
+## IMSI Catchers (Again!)
+- Malicious eNodeB advertises itself as legitimate
+	- Sniff and duplicate the configuration of a legitimate eNodeB
+	- Create higher received signal strength than the legitimate's
+- Force all UEs to disclode their IMSI in the clear
+	- UE trusts any eNodeB who claims it has never seen that UE
+- No need to downgrade to GSM
+	- identity_request message is still unauthenticated!
+- Open source tools
+	- srsRAN (with SDR inside Faraday cage - why?) Against the law
+
+## 4G - Crypto Algorithms
+- Available encryption and integrity algorithms
+	- Snow 3G (EIA1/EEA1) - mandatory
+		- Stream cipher, employs an LFSR (initiated by the key and a 128-bit initialization variable) and a state machine to generate a sequence of 32-bit words
+	- AES (EIA2/EEA2) - mandatory
+		- Block cipher - Counter mode for confidentiality and cipher-based MAC mode for integrity
+	- ZUC (EIA3/EEA3) - optional
+		- Stream cipher, with a 128-bit initialization vector
+- They all use 128-bit keys
+
+## 4.5th Generation - 2015
+- LTE Advanced Pro (4.5G)
+	- Up to 3 Gbps (3x LTE Advanced)
+		- Aided by 256-QAM support
+	- Employs MU-MIMO
+- Introduces narrowband IoT (NB-IoT)
+	- Bring IoT devices to the cellular networks ecosystem
+	- Low cost, long battery life, and high connection density
+	- Uses the same security and privacy features of LTE
+
+## 5th Gen (5G) - 2019
+- New applications beyond mobile internet
+	- drones
+	- vehicles
+	- IoT/sensors
+	- ...
+- New frequency bands: 2.5-3.7 GHz, 25-39 GHz
+	- In addition to the traditional 600 - 850 MHz band for LTE
+	- Different coverage ranges (why?) physics of waves
+	- eNodeB -> gNB
+
+## 5G Design Goals
+- Extremely low latency
+	- ultra-reliable and low-latency communications (URLLC)
+		- Less than 1 millisecond
+	- Applications: remote surgery, VR, interactive/autonomous vehicles (smart transportation), etc.
+- Ubiquitous, high density, high speed connectivity
+	- Extreme mobile broadband (xMBB) - up to 10 Gbps
+	- Massive machine-type communications (mMTC) - smart city
+	- Support higher densities
+		- Concerts, stadium, malls, etc
+
+## 5G Ecosystem
+![[Pasted image 20211028111522.png]]
+- A massively connected community
+	- wearables
+	- Smart vehicles
+	- Appliances
+	- Virtual Reality
+	- Augmented Reality
+	- Public Safety
+	- Smart classroom :)
+	- Remote surgery
+	- ...
+
+## What Brings About 5G?
+- Key enabling technologies
+	- Millimeter waves and small cells
+	- Massive MIMO
+	- Beamforming
+	- Full duplex
+	- Network slicing/virtualization
+- Implications:
+- Challenges
+	- Fast signal decay (why?) needs more gNBs, new hardware, wider attack surface, privacy concerns, ...
+
+## 5G Security
+- The same encryption and integrity  algorithms as LTE
+- IMSI -> SUbscription Permanent Identifier (SUPI)
+	- 5G-GUTI is still supported
+- Evolution of security from 2G to 5G:
+![[Pasted image 20211102111532.png]]
+
+## 5G Security - SUPI Encryption
+- SUPI obfuscated and encrypted (concealed) using public key of HSS
+	- HSS (home network) public key is stored in USIM
+	- Probabilistic asymmetric encryption using ECC
+		- Each time, same SUPI is encrypted with a different ephemeral key to generate a different SUCI (to avoid creating a fixed ID)
+![[Pasted image 20211102111903.png]]
+	
+# Security of Vehicle-to-Everything Communications
+## Roadways of the Future
+![[Pasted image 20211104110319.png]]
+
+## Connected Vehicles (CV)
+- Let vehicles "talk" to enhance proximity awareness
+	- Can reduce > 60% of the deaths on the roads
+		- 98% of accidents today are due to human errors :(
+	- Increase transportation system efficiency
+		- Reduced travel time, less traffic, and less pollution
+	- Comfort while driving, social inclusion (mobility for all), ...
+		- Autonomous, semi-autonomous, and non-autonomous cars
+- Emerging technology with rapid growth
+	- Projected market value by 2028: $12.8 Billion
+	- Volkswagon, BMW, Ford, Tesla, Nissan, Cadillac, Audi, etc.
+## Types of Connected Vehicles
+- exploit wireless waves to talk
+- Depending on whom a vehicle talks to
+	- Vehicle-to-Vehicle (V2V)
+	- Vehicle-to-Netowkr
+	- Vehicle-to-Pedestrian
+	- Vehicle-to-Infrastructure
+	- Vehicle-to-\[insert your choice\] -> V2X
+		- Cellular V2X - Vehicles as new citizens in future 5G ecosystem
+
+## Vehicle to Infrastructure
+- Roadside Units (RSU)
+	- Devices installed along the roadway
+	- Capable of relaying V2X messages
+	- Can interface with traffic management systems like traffic light controllers
+
+## Vehicle to Vehicle Communications
+- Provide 360 degree awareness of nearby vehicles
+	- Wirelessly exchange safety and non-safety messages
+	- Complement the sensors: see (in NLOS) wjat sensors cant
+		- Sensors ![[Pasted image 20211104111241.png]]
+		- V2V ![[Pasted image 20211104111302.png]]
+		- V2V is expected to have the largest share of the CV market
+
+## Basic Safety Messages (BSMs)
+- Broadcasted periodically by each vehicle
+	- Contains position, velocity, direction, acceleration, ...
+- BSM examples
+	- Forward Collision Warning
+	- Emergency Electronic Brake Light
+	- Blind Spot Warning
+	- Do not Pass Warning
+	- Left Turn Assist
+	- Intersection Movement Assist
+![[Pasted image 20211104111602.png]]
